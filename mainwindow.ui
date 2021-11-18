@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>1280</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1280</width>
+     <height>720</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="startPage">
+     <widget class="QFrame" name="startPageFrame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1280</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{ border: 0; }</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="startLogo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>180</y>
+         <width>1280</width>
+         <height>320</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../build-Media_Center-Qt_4_8_6_System-Debug/Images/Logos/start_screen_logo.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="startProgressBar">
+       <property name="geometry">
+        <rect>
+         <x>205</x>
+         <y>530</y>
+         <width>871</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar {
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+QProgressBar::chunk {
+    background-color: #43B02A;
+    width: 10px;
+    margin: 1px;
+	padding-left: 5px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="actionsPage">
+     <widget class="QFrame" name="actionsPageFrame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1280</width>
+        <height>700</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{ border: 0; }</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="actionButtonsFrame">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>155</y>
+         <width>792</width>
+         <height>547</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame { border: 0; }</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="twitterBtn">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>274</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="hboNowBtn">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>137</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="netflixBtn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="huluBtn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>411</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="hboGoBtn">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>411</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="skypeBtn">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>0</y>
+          <width>264</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="spotifyBtn">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>274</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="amazonBtn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>137</y>
+          <width>264</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="espnBtn">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>411</y>
+          <width>264</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pandoraBtn">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>274</y>
+          <width>264</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="youtubeBtn">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>137</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="moviesBtn">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>0</y>
+          <width>263</width>
+          <height>135</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="currentTemp">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>0</y>
+         <width>171</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Monospace</family>
+         <pointsize>72</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white</string>
+       </property>
+       <property name="text">
+        <string>76°</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="humidity">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>20</y>
+         <width>360</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Monospace</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white</string>
+       </property>
+       <property name="text">
+        <string>Humidity: 63%</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="windSpeed">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>60</y>
+         <width>360</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Monospace</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white</string>
+       </property>
+       <property name="text">
+        <string>Wind Speed: 15 mph NE</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="tempRange">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>100</y>
+         <width>360</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Monospace</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white</string>
+       </property>
+       <property name="text">
+        <string>High / Low: 89°  61°</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="weatherIcon">
+       <property name="geometry">
+        <rect>
+         <x>75</x>
+         <y>5</y>
+         <width>140</width>
+         <height>140</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../build-Media_Center-Qt_4_8_6_System-Debug/Images/Icons/scattered_rain.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="movieTL">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>80</y>
+         <width>218</width>
+         <height>308</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../build-Media_Center-Qt_4_8_6_System-Debug/Images/Movies/dark_knight_rises.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="movieTR">
+       <property name="geometry">
+        <rect>
+         <x>1042</x>
+         <y>80</y>
+         <width>218</width>
+         <height>308</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../build-Media_Center-Qt_4_8_6_System-Debug/Images/Movies/deadpool.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="movieBL">
+       <property name="geometry">
+        <rect>
+         <x>820</x>
+         <y>392</y>
+         <width>218</width>
+         <height>308</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../build-Media_Center-Qt_4_8_6_System-Debug/Images/Movies/jaws.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="movieBR">
+       <property name="geometry">
+        <rect>
+         <x>1042</x>
+         <y>392</y>
+         <width>218</width>
+         <height>308</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../build-Media_Center-Qt_4_8_6_System-Debug/Images/Movies/star_wars.png</pixmap>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="webViewPage">
+     <widget class="QLabel" name="webViewLogo">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1280</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="startBackground">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../build-Media_Center-Qt_4_8_6_System-Debug/Images/Backgrounds/background_1.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blackBackground">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:black;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="toolsMenuFrame">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>3</y>
+      <width>260</width>
+      <height>74</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame
+{
+	border:0;s
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="settingsBtn">
+     <property name="geometry">
+      <rect>
+       <x>195</x>
+       <y>5</y>
+       <width>65</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="volumeBtn">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>5</y>
+       <width>65</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="homeBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>5</y>
+       <width>65</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="wifiBtn">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>5</y>
+       <width>65</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <zorder>blackBackground</zorder>
+   <zorder>startBackground</zorder>
+   <zorder>stackedWidget</zorder>
+   <zorder>toolsMenuFrame</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
